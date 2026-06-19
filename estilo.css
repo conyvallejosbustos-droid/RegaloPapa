@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background: #f3dada;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.caja {
+    background: rgb(248, 126, 126);
+    padding: 20px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+#mensaje {
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    font-style: italic;
+}
