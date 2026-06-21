@@ -20,7 +20,8 @@
 
 .sobre.abierto {
 
-    height: 650px;
+    height: auto;
+    min-height: 900px;
 
 }
 
@@ -44,9 +45,10 @@
 
     z-index: 3;
 }
+
 .carta {
 
-    padding: 50px 30px;
+    padding: 60px 30px;
 
     font-family: Georgia, serif;
 
@@ -98,7 +100,15 @@ button:active {
     transform: scale(0.95);
 }
 
-#mensaje {
-    max-height: 450px;
-    overflow-y: auto;
+#foto {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: none;
+
+    margin: 20px auto;
 }
