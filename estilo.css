@@ -1,23 +1,104 @@
-body {
-    text-align: center;
-    font-family: Arial;
-    background: #f3dada;
+.sobre {
+
+    position: relative;
+
+    width: 350px;
+    height: 220px;
+
+    margin: 50px auto;
+
+    background: #fff8f0;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 15px #aaa;
+
+    overflow: hidden;
+
+    transition: 1.2s;
+}
+
+.sobre.abierto {
+
+    height: 650px;
+
+}
+
+.tapa {
+
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-top: 120px solid #e88b9b;
+
+    top: 0;
+    left: 0;
+
+    transform-origin: top center;
+
+    transition: 1s;
+
+    z-index: 3;
+}
+.carta {
+
+    padding: 50px 30px;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
 }
 
 button {
-    padding: 10px;
-    font-size: 18px;
+    display: block;
+    margin: 20px auto;
 }
 
-.caja {
-    background: rgb(248, 126, 126);
-    padding: 20px;
-    margin: 50px;
-    border-radius: 15px;
+.abrir {
+    transform: rotateX(180deg);
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+
+    padding: 14px 35px;
+
+    background: #e88b9b;
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    background: #d96b80;
+}
+
+
+button:active {
+    transform: scale(0.95);
 }
 
 #mensaje {
-    font-family: "Georgia", serif;
-    font-size: 25px;
-    font-style: italic;
+    max-height: 450px;
+    overflow-y: auto;
 }
